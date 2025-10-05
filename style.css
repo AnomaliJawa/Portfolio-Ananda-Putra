@@ -379,7 +379,7 @@ img {
 
 .experience-timeline {
     position: relative;
-    /* max-width: 900px;  */
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -868,3 +868,4 @@ footer {
         font-size: 1.2rem;
     }
 }
+

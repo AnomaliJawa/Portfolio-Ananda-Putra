@@ -1,13 +1,13 @@
 :root {
-    --primary-text-color: #1F2937; /* Dark Gray */
-    --secondary-text-color: #6B7280; /* Medium Gray */
-    --accent-color: #6366F1; /* Indigo - mirip biru/ungu di Figma */
+    --primary-text-color: #1F2937; 
+    --secondary-text-color: #6B7280; 
+    --accent-color: #6366F1; 
     --accent-color-darker: #4F46E5;
-    --background-color: #F9FAFB; /* Light Gray - hampir putih */
+    --background-color: #F9FAFB; 
     --card-background-color: #FFFFFF;
-    --border-color: #E5E7EB; /* Lighter Gray */
-    --border-color-transparent: rgba(229, 231, 235, 0.6); /* Lighter Gray semi-transparan */
-
+    --border-color: #E5E7EB;
+    --border-color-transparent: rgba(229, 231, 235, 0.6); 
+    
     --font-primary: 'Poppins', sans-serif;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -15,7 +15,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
 
-    --container-width: 1280px; /* Lebar konten utama diperbarui */
+    --container-width: 1280px; 
     
     --section-padding: 80px 0;
     --card-padding: 24px;
@@ -207,7 +207,7 @@ img {
     width: 20px; 
 }
 
-#navbar nav.nav-links ul li a i.fa-phone-alt { /* Jika Anda menggunakan ikon telepon di HTML */
+#navbar nav.nav-links ul li a i.fa-phone-alt { 
     font-size: 1rem; 
 }
 
@@ -337,7 +337,6 @@ img {
 
 .skills-grid {
     display: grid;
-    /* Default untuk mobile (1 kolom) */
     grid-template-columns: 1fr; 
     gap: 15px;
 }
@@ -380,7 +379,7 @@ img {
 
 .experience-timeline {
     position: relative;
-    max-width: 900px; 
+    /* max-width: 900px;  */
     margin: 0 auto;
 }
 
@@ -437,16 +436,16 @@ img {
     margin-bottom: 8px;
     font-weight: var(--font-weight-medium);
 }
-.experience-duration, .experience-achievement { /* Styling untuk durasi dan pencapaian tambahan */
+.experience-duration, .experience-achievement { 
     font-style: italic;
     font-size: 0.85em;
     color: var(--secondary-text-color);
 }
 .experience-achievement {
     font-weight: var(--font-weight-medium);
-    color: var(--accent-color); /* Beri warna berbeda untuk pencapaian */
-    display: block; /* agar bisa di baris baru jika perlu */
-    margin-top: -2px; /* sedikit penyesuaian jarak */
+    color: var(--accent-color);
+    display: block;
+    margin-top: -2px;
     margin-bottom: 8px;
 }
 
@@ -488,11 +487,15 @@ img {
     margin-bottom: 0;
 }
 
-/* === PROJECTS SECTION === */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+}
+
+.see-all-projects {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .project-card {
@@ -550,7 +553,6 @@ img {
 }
 
 
-/* === CONTACT SECTION === */
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
@@ -585,7 +587,6 @@ img {
     transform: scale(1.1);
 }
 
-/* === FOOTER === */
 footer {
     backdrop-filter: blur(8px); 
     padding: 60px 0 30px 0; 
@@ -602,7 +603,6 @@ footer {
     justify-content: space-between;
     gap: 30px; 
     margin-bottom: 40px;
-    /* .container di HTML akan mengatur max-width dan centering */
 }
 
 .footer-section {
@@ -714,14 +714,12 @@ footer {
 }
 
 
-/* === RESPONSIVE STYLES === */
 @media (max-width: 1300px) { 
-    /* Tidak perlu penyesuaian padding navbar di sini jika calc(5% + 15px) sudah bekerja baik */
 }
 
 @media (max-width: 992px) { 
     #navbar { 
-        padding: 15px calc(5% + 10px); /* 10px adalah asumsi pengurangan dari 15px padding .container jika .container juga disesuaikan */
+        padding: 15px calc(5% + 10px);
     }
     .hero-content {
         flex-direction: column-reverse; 
